@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>フォームデモ</title>
+</head>
+<body>
+<form action="/submit" method="post">
+  <dl>
+    <dt>性別</dt>
+    <dd>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">男性</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">女性</label>
+    </dd>
+    
+    <dt>好きな食べ物</dt>
+    <dd><input type="text" name="username" required></dd>
+
+    <dt>好きな主食</dt>
+    <dd>
+      <input type="radio" id="rice" name="food" value="rice">
+      <label for="rice">米</label>
+      <input type="radio" id="bread" name="food" value="bread">
+      <label for="bread">パン</label>
+      <input type="radio" id="noodle" name="food" value="noodle">
+      <label for="rice">麺類</label>
+    </dd>
+
+    <dt>アレルギー</dt>
+    <dd>
+      <select name="allergy">
+        <input type="checkbox" id="shrimp" name="allergy" value="shrimp">
+        <label for="shrimp">えび</label>
+        <input type="checkbox" id="crab" name="allergy" value="crab">
+        <label for="crab">かに</label>
+        <input type="checkbox" id="nuts" name="allergy" value="nuts">
+        <label for="nuts">くるみ</label>
+        <input type="checkbox" id="wheat" name="allergy" value="wheat">
+        <label for="wheat">小麦</label>
+        <input type="checkbox" id="soba" name="allergy" value="soba">
+        <label for="soba">そば</label>
+        <input type="checkbox" id="egg" name="allergy" value="egg">
+        <label for="egg">卵</label>
+        <input type="checkbox" id="milk" name="allergy" value="milk">
+        <label for="milk">牛乳</label>
+        <input type="checkbox" id="other" name="allergy" value="other">
+        <label for="other">その他</label>
+      </select>
+    </dd>
+
+    <dt>送信</dt><dd><input type="submit" value="送信"></dd>
+    <dt>リセット</dt><dd><input type="reset" value="リセット"></dd>
+  </dl>
+</form>
+</body>
+</html>
